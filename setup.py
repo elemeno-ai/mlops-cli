@@ -7,7 +7,7 @@ dependencies = ['click', 'elemeno-ai-sdk==0.0.78']
 
 setup(
     name='elemeno-mlops-cli',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/elemeno-ai/mlops-cli',
     license='BSD',
     author='Lucas Bonatto Miguel',
