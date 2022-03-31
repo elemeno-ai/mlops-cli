@@ -1,0 +1,26 @@
+# This file contains the base configuration for the sdk to function properly
+# Elemeno-AI
+
+app:
+  mode: ${oc.env:ELEMENO_MODE,development}
+cos:
+  host: yourmlflow.host
+  key_id: cos_user
+  secret: cos_pass
+  use_ssl: False
+registry:
+  tracking_url: http://mlflow.tracking.url:80
+feature_store:
+  feast_config_path: .
+  registry: gs://elemeno-feature-store/generic_registry
+  provider: gcp
+  gcp:
+    project_id: your-google-project-id
+gcp:
+  sa:
+    file: /tmp/gcp-credentials.json
+  appflow:
+    client_secret:
+      file: /tmp/client_secrets.json
+    scopes:
+      - https://www.googleapis.com/auth/bigquery
