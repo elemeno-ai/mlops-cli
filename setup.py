@@ -3,7 +3,7 @@ A CLI with useful commands for interacting with Elemeno ML Ops
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click', 'elemeno-ai-sdk==0.0.79']
+dependencies = ['click', 'elemeno-ai-sdk==0.1.0']
 
 setup(
     name='elemeno-mlops-cli',
